@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// Router
+import {BrowserRouter} from 'react-router-dom';
+
+let WithRouter=()=>
+<BrowserRouter>
+<React.StrictMode>
+    <App />
+  </React.StrictMode>
+
+</BrowserRouter>
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <WithRouter/>,
   document.getElementById('root')
 );
 

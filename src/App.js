@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Routes from './Routes';
+import {NavLink} from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            Proyecto de e-commerce
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav>
+        <NavLink  exact activeClassName="active"  to="/">Home </NavLink>
+        <NavLink activeClassName="active"  to="/clothes"> Ropa de mujer</NavLink>
+        <NavLink activeClassName="active"  to="/makeup">Maquillaje </NavLink>
+        <NavLink activeClassName="active"  to="/jewelry"> Accesorios</NavLink>
+        <NavLink activeClassName="active"  to="/forum"> Foro</NavLink>
+      </nav>
+      <Routes/>
     </div>
   );
 }
 
-export default App;
