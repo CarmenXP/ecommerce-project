@@ -1,11 +1,7 @@
 
-.navbar {
-  display: flexbox;
-  text-decoration: none;
-  text-align: right;
-  background-color: #ebeef0;
-  font-size: 25px;
+
+.active{
+  color: peru;
+  font-size: 20px;
   
-
 }
-
