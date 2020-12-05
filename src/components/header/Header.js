@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './header.module.css'
+import styles from './header.module.css';
 
 
 const Header = () => {
@@ -8,6 +8,7 @@ const Header = () => {
              <header>
                  <div className="logo">
                     <a href='#'>Logo</a>
+            
                  </div>
                  <div className="search">
                      <form>
@@ -16,14 +17,14 @@ const Header = () => {
                                 type="texto"
                                 placeholder="Buscar"
                              />
-                            <span><button></button></span>
+                            <span><button type="submit">sent</button></span>
                         </span> 
                         
                      </form>
                  </div>
                  <div className="menu">
                     <a href='# '>Log in</a>
-                    <a href='#'>Carrito</a>
+                    <a href="#">Carrito</a>
                  </div>
             
             </header>
