@@ -1,35 +1,36 @@
 import React from 'react'
+import styles from './footer.module.css'
 
 const Footer = () => {
     return ( 
         <footer>
-            <div className="footerContent">
-                <div className="menuBar">
+            <div className={styles.footerContent}>
+                <div className={styles.menuBar}>
                     <h4>Necesitas Ayuda</h4>
                         <ul>
-                            <a href="#"><li>Atención al cliente</li></a>
-                            <a href="#"><li>Facturación</li></a>
-                            <a href="#"><li>Tiendas</li></a>
+                            <li><a href="#">Atención al cliente</a></li>
+                            <li><a href="#">Facturación</a></li>
+                            <li><a href="#">Tiendas</a></li>
                         </ul>
 
                 </div>
-                <div className="menuBars">
+                <div className= {styles.menuBar}>
                     <h4>Acerca de Maracuyá</h4>
                     <ul>
-                            <a href="#"><li>¿Quiénes somos?</li></a>
-                            <a href="#"><li>Bolsa de trabajo</li></a>
-                            <a href="#"><li>Relación con inversionistas</li></a>
+                            <li><a href="#">¿Quiénes somos?</a></li>
+                            <li><a href="#">Bolsa de trabajo</a></li>
+                            <li><a href="#">Relación con inversionistas</a></li>
                     </ul>
                 </div >
-                <div className="menuBar">
+                <div className={styles.menuBar}>
                     <h4>Métodos de pago</h4>
                     <ul>
-                            <a href="#"><li>Visa</li></a>
-                            <a href="#"><li>Mastercard</li></a>
-                            <a href="#"><li>American Express</li></a>
+                            <li><a href="#">Visa</a></li>
+                            <li><a href="#">Mastercard</a></li>
+                            <li><a href="#">American Express</a></li>
                         </ul>
                 </div>
-                <div className="menuBar">
+                <div className={styles.menuBar}>
                     <h4>Suscríbete a nuestra <br/> Newsletter</h4>
                     <form>
                         <span><input 
@@ -40,7 +41,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="SocialSites">
+            <div className= {styles.SocialSites}>
                 <a href="#">Facebook</a>
                 
                 <a href="#">Instagram</a>
@@ -54,10 +55,10 @@ const Footer = () => {
                 <a href="#">TikTok</a>
 
             </div>
-            <div className="copyRight">
+            <div className={styles.copyRight}>
                 <span> &copy; Maracuyá. Todos los derechos reservados</span>
 
-                
+
 
             </div>
             

@@ -1,8 +1,9 @@
 header{
     display: flex;
-    background-color: #203040;
+    background-color: teal;
     margin-top: 0%;
     padding-top: 30px;
+    
 }
 a {
     text-decoration: none;
