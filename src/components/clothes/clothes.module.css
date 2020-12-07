@@ -1,12 +1,23 @@
 .content{
     display: flex;
+    justify-content: space-around;
+    
 }
 .card{
+    display: flex;
+    flex-direction: column;
     border: 1px solid #94618E;
+    margin:5px;
     
 }
 h3{
     color: #94618E;
+    margin:8px 0px;
+    text-align: center;
+
+}
+.price{
+    text-align: center;
 }
 .medium{
     width: 217px;

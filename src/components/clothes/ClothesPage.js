@@ -13,7 +13,8 @@ export default function ClothesPage(){
 
               <div className={styles.cardBody}>
                   <h3>Blusa Maracuyá </h3>
-                  <div className={styles.price}>$120</div>
+                  <div className={styles.price}>Precio: $120</div>
+                  <a href="">Ver</a>
               </div>
             </div>
 
