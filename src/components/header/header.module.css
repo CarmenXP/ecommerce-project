@@ -1,8 +1,8 @@
 header{
     display: flex;
-    background-color: teal;
+    background-color: #94618E;
     margin-top: 0%;
-    padding-top: 30px;
+    padding: 30px 0px;
     
 }
 a {
@@ -10,7 +10,7 @@ a {
 }
 
 header a{
-    color: blueviolet;
+    color: whitesmoke;
     padding: 1rem;
     font-size: 23px;
 

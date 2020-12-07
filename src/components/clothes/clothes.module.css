@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+}
+.card{
+    border: 1px solid #94618E;
+    
+}
+h3{
+    color: #94618E;
+}
+.medium{
+    width: 217px;
+    height: 289px;
+}

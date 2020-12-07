@@ -6,11 +6,11 @@ const Header = () => {
     return ( 
        
              <header>
-                 <div className="logo">
+                 <div className={styles.logo}>
                     <a href='#'>Logo</a>
             
                  </div>
-                 <div className="search">
+                 <div className={styles.search}>
                      <form>
                         <span>
                             <input
@@ -22,7 +22,7 @@ const Header = () => {
                         
                      </form>
                  </div>
-                 <div className="menu">
+                 <div className={styles.menu}>
                     <a href='# '>Log in</a>
                     <a href="#">Carrito</a>
                  </div>
