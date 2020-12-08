@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './clothes.module.css';
+
 
 export default function ClothesPage(){
     
@@ -14,7 +16,7 @@ export default function ClothesPage(){
               <div className={styles.cardBody}>
                   <h3>Blusa Maracuyá </h3>
                   <div className={styles.price}>Precio: $120</div>
-                  <a href="">Ver</a>
+                  <Link to="/viewDetail"><span>Ver</span></Link>
               </div>
             </div>
 
