@@ -1,4 +1,5 @@
 import React from 'react';
+import{Link} from 'react-router-dom'
 import styles from './header.module.css';
 
 
@@ -22,9 +23,9 @@ const Header = () => {
                         
                      </form>
                  </div>
-                 <div className={styles.menu}>
-                    <a href='# '>Log in</a>
-                    <a href="#">Carrito</a>
+                 <div className={styles.menu}>    
+                    <Link to="/signIn">Log in</Link>
+                    <a href='# '>Carrito</a>
                  </div>
             
             </header>
