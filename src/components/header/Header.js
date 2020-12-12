@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 
+
 const Header = () => {
 
     const logo= "https://lh3.googleusercontent.com/proxy/MJQOFFlDq3XkZ0O193TSsQHAzJom08Oh4oUoH-hI0fObgN43bW21VLu4Pk__qoHutvuTrEn0e0pj8nJYPjDfT1XA0zv-xEOP7ajecezHGMbwEvEuxYeOAE2_1d0z_7fW6A"
@@ -22,7 +23,7 @@ const Header = () => {
                                 type="texto"
                                 placeholder="Buscar"
                              />
-                            <span><button type="submit">sent</button></span>
+                            <button type="submit">B</button>
                         </span> 
                         
                      </form>

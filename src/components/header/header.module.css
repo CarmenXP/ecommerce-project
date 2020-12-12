@@ -24,9 +24,12 @@ header a{
     
 }
 
-.search{
+.search {
     
+   display: flex; 
+   
 }
+
 
 .menu{
     
