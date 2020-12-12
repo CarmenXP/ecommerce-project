@@ -1,5 +1,11 @@
 import React from 'react'
 import styles from './footer.module.css'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+
 
 const Footer = () => {
     return ( 
@@ -42,17 +48,12 @@ const Footer = () => {
 
             </div>
             <div className= {styles.SocialSites}>
-                <a href="#">Facebook</a>
+                <a href="#"><FacebookIcon/></a>
+                <a href="#"><InstagramIcon/></a>
+                <a href="#"><YouTubeIcon/></a>
+                <a href="#"><PinterestIcon/></a>
+                <a href="#"><TwitterIcon/></a>
                 
-                <a href="#">Instagram</a>
-                
-                <a href="#">YouTube</a>
-                
-                <a href="#">Pinterest</a>
-                
-                <a href="#">Twitter</a>
-                
-                <a href="#">TikTok</a>
 
             </div>
             <div className={styles.copyRight}>

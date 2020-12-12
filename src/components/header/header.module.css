@@ -1,9 +1,10 @@
 header{
     display: flex;
+    justify-content: space-between;
     background-color: #94618E;
     margin-top: 0%;
     padding: 30px 0px;
-    
+    align-items: center;
 }
 a {
     text-decoration: none;
@@ -16,4 +17,19 @@ header a{
 
     
 }
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.search{
+    
+}
+
+.menu{
+    
+}
+
 
