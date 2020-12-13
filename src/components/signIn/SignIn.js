@@ -19,6 +19,9 @@ const SignIn =()=>{
                 <div>
                     <p>----------- O bien ----------- </p>
 
+                   <img className={styles.googleButton} src="https://cdn.icon-icons.com/icons2/836/PNG/512/Google_icon-icons.com_66793.png"/>
+                   <img className={styles.facebookButton} src="https://cdn.icon-icons.com/icons2/836/PNG/512/Facebook_icon-icons.com_66805.png"/>
+
                 </div>
                 
             </form>

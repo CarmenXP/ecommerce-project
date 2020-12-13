@@ -48,11 +48,21 @@ const Footer = () => {
 
             </div>
             <div className= {styles.SocialSites}>
-                <a href="#"><FacebookIcon/></a>
-                <a href="#"><InstagramIcon/></a>
-                <a href="#"><YouTubeIcon/></a>
-                <a href="#"><PinterestIcon/></a>
-                <a href="#"><TwitterIcon/></a>
+                <a href="#"><FacebookIcon
+                    style={{ color: "white", fontSize: 35}}
+                /></a>
+                <a href="#"><InstagramIcon
+                    style={{ color: "white", fontSize: 35}}
+                /></a>
+                <a href="#"><YouTubeIcon
+                    style={{ color: "white", fontSize: 35 }}
+                /></a>
+                <a href="#"><PinterestIcon
+                    style={{ color: "white", fontSize: 35}}
+                /></a>
+                <a href="#"><TwitterIcon
+                    style={{ color: "white", fontSize: 35 }}
+                /></a>
                 
 
             </div>

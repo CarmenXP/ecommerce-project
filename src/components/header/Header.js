@@ -29,9 +29,14 @@ const Header = () => {
                      </form>
                  </div>
                  <div className={styles.menu}>    
-                    <Link to="/signIn"><AccountCircleIcon/></Link>
+                    <Link to="/signIn"><AccountCircleIcon
+                        style={{ fontSize: 35 }}
                     
-                    <a href='# '><ShoppingCartIcon/></a>
+                    /></Link>
+                    
+                    <a href='# '><ShoppingCartIcon
+                        style={{ fontSize: 35 }}
+                    /></a>
                  </div>
             
             </header>
