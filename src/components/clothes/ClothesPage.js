@@ -23,7 +23,7 @@ export default function ClothesPage(){
             {products.map((product) => (
                 <CardClothes
                   id={product.id}
-                  blusa={product.blusa}
+                  producto={product.producto}
                   precio={product.precio}
                   descripcion={product.descripcion}
                   imagen={product.imagen}

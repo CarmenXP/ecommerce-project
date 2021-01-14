@@ -20,7 +20,7 @@ export default function ShoesPage(){
               {shoes.map((product) => (
                   <CardShoes
                     id={product.id}
-                    zapato={product.zapato}
+                    producto={product.producto}
                     precio={product.precio}
                     descripcion={product.descripcion}
                     imagen={product.imagen}
