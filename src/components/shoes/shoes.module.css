@@ -1,0 +1,27 @@
+.content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #94618E;
+    margin:5px;
+    box-shadow: 0 4px 8px 0 rgba(139, 0, 139, 0.3), 0 6px 20px 0 rgba(139, 0, 139, 0.3);
+    
+}
+h3{
+    color: #94618E;
+    margin:8px 0px;
+    text-align: center;
+
+}
+.price{
+    text-align: center;
+}
+.medium{
+    width: 241px;
+    height: 321px;
+}
