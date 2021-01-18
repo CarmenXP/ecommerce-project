@@ -12,8 +12,9 @@ const Header = () => {
     return ( 
        
              <header>
+                 
                  <div className={styles.logo}>
-                <a href='#'><img /></a>
+                    <a href='#'><img /></a>
             
                  </div>
                  <div className={styles.search}>
@@ -30,12 +31,12 @@ const Header = () => {
                  </div>
                  <div className={styles.menu}>    
                     <Link to="/signIn"><AccountCircleIcon
-                        style={{ fontSize: 35 }}
+                        style={{color: "black", fontSize: 35 }}
                     
                     /></Link>
                     
                     <a href='# '><ShoppingCartIcon
-                        style={{ fontSize: 35 }}
+                        style={{ color: "black", fontSize: 35 }}
                     /></a>
                  </div>
             

@@ -17,6 +17,7 @@ export default function App() {
   }
   return (
     <div>
+      <div className= "headband"></div> 
       <Header/>
       
       <nav>

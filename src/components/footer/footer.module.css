@@ -1,8 +1,12 @@
 footer{
     display: flexbox;
-    margin: 10px 0px;
-    background-color: #94618E;
+    margin: 35px 0px 10px 0px;
+    background-color: white;
     padding: 12px;
+    border-top-style: solid ;
+    border-color: #999999;
+    border-width: 1px;
+    
 }
 ul{
     list-style-type: none;
@@ -13,12 +17,12 @@ li a{
     text-decoration: none;
     display: block;
     padding: 3px 0px;
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.863);
     
 }
 h4{
     margin: 15px 0px;
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.863);
     
 }
 .footerContent{
@@ -66,6 +70,6 @@ button{
 }
 .copyRight{
     text-align: center;
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.863);
     margin: 12px 0px;
 }

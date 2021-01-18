@@ -1,11 +1,15 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #94618E;
     margin-top: 0%;
-    padding: 30px 0px;
+    padding: 15px 0px;
     align-items: center;
+    border-bottom-style: solid ;
+    border-color: #cac8c8;
+    border-width: 1px;
 }
+
+
 a {
     text-decoration: none;
 }
@@ -21,6 +25,7 @@ header a{
 .logo img{
     width: 100px;
     height: 100px;
+    background-color: slategray;
     
 }
 
@@ -31,8 +36,6 @@ header a{
 }
 
 
-.menu{
-    
-}
+
 
 

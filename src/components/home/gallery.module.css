@@ -1,0 +1,26 @@
+.galleryContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    
+}
+
+.galleryTitle{
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img{
+
+  width: 265px;
+  height: 265px;  
+  margin: 5px 6px;
+  padding: 5px 6px;
+}
