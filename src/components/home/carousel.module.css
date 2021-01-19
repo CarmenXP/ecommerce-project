@@ -1,0 +1,27 @@
+.contentSlider{
+    width: 1000px;
+    height: 620px;
+    position: relative;
+    left: 165px;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.slider{
+    
+    width: 1000px;
+    height: 620px;
+    text-align: center;
+}
+
+.imageSlider img{
+    width: 1000px;
+    height: 620px;
+    position: relative;
+    
+}
+
+.sliderTitle{
+
+}

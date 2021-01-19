@@ -1,19 +1,20 @@
 import React from 'react';
 import Slider from 'infinite-react-carousel';
+import styles from './carousel.module.css';
 
 
 export default function Carousel({images}){
 
     return(
-        <section>
-            <Slider>
+        <section className={styles.contentSlider}>
+            <Slider className={styles.slider}>
                 {images.map((image) =>(
-                    <div key={image.id}>
+                    <div key={image.id} className={styles.imageSlider}>
                         <img
                             src={image.image} 
                             alt={image.title}
                         />
-                        <p>{image.title}</p>
+                        <p className={styles.sliderTitle}>{image.title}</p>
 
                     </div>
 
