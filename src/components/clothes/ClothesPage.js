@@ -9,10 +9,10 @@ export default function ClothesPage(){
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://database-e-commerce-default-rtdb.firebaseio.com/products.json")
+    fetch("https://database-e-commerce-default-rtdb.firebaseio.com/products/blouses.json")
       .then((res) => res.json())
       .then((json) => {
-        setProducts(json.blouses);
+        setProducts(json);
       });
   }, []);
 

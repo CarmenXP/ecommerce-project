@@ -8,13 +8,13 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const Header = () => {
 
-    const logo= "https://lh3.googleusercontent.com/proxy/MJQOFFlDq3XkZ0O193TSsQHAzJom08Oh4oUoH-hI0fObgN43bW21VLu4Pk__qoHutvuTrEn0e0pj8nJYPjDfT1XA0zv-xEOP7ajecezHGMbwEvEuxYeOAE2_1d0z_7fW6A"
+    const logo= "https://i.pinimg.com/474x/2c/2a/03/2c2a03dc02777014a1287b76f5dc1df2.jpg"
     return ( 
        
              <header>
                  
                  <div className={styles.logo}>
-                    <a href='#'><img /></a>
+                    <a href='#'><img src={logo} /></a>
             
                  </div>
                  <div className={styles.search}>

@@ -7,7 +7,7 @@ export default function CardShoes(props){
         return(
             
     
-                <div className={styles.card}>
+                <div key="{props.id}" className={styles.card}>
                   <img className={styles.medium} src={props.imagen}/>
     
                   <div className={styles.cardBody}>
