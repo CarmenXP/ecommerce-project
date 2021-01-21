@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'infinite-react-carousel';
 import styles from './carousel.module.css';
+import { Link } from 'react-router-dom';
 
 
 export default function Carousel({images}){
@@ -15,6 +16,7 @@ export default function Carousel({images}){
                             alt={image.title}
                         />
                         <p className={styles.sliderTitle}>{image.title}</p>
+                        
 
                     </div>
 

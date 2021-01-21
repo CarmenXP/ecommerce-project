@@ -1,5 +1,5 @@
 import React from 'react';
-import{Link} from 'react-router-dom';
+import{Link, NavLink} from 'react-router-dom';
 import styles from './header.module.css';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -12,33 +12,45 @@ const Header = () => {
     return ( 
        
              <header>
+                 <div className={styles.firstNav}> 
+                         <div className={styles.logo}>
+                            <a href='#'><img src={logo} /></a>
+
+                         </div>
+                         <div className={styles.name}>
+                             <h2> titulo del e-commerce</h2>
+                         </div>
+                         <div className={styles.search}>
+                             <form>
+                                <span>
+                                    <input
+                                        type="texto"
+                                        placeholder="Buscar"
+                                     />
+                                    <button type="submit">B</button>
+                                </span> 
+
+                             </form>
+                         </div>
+                         <div className={styles.menu}>    
+                            <Link to="/signIn"><AccountCircleIcon
+                                style={{color: "black", fontSize: 35 }}
+
+                            /></Link>
+
+                            <a href='# '><ShoppingCartIcon
+                                style={{ color: "black", fontSize: 35 }}
+                            /></a>
+                         </div>
+                    </div>
+                 <nav>
+                    <NavLink  exact activeClassName="active"  to="/">Home </NavLink>
+                    <NavLink activeClassName="active"  to="/clothes"> Ropa de mujer</NavLink>
+                    <NavLink activeClassName="active"  to="/shoes"> Zapatos </NavLink>
+
+                </nav>
                  
-                 <div className={styles.logo}>
-                    <a href='#'><img src={logo} /></a>
-            
-                 </div>
-                 <div className={styles.search}>
-                     <form>
-                        <span>
-                            <input
-                                type="texto"
-                                placeholder="Buscar"
-                             />
-                            <button type="submit">B</button>
-                        </span> 
-                        
-                     </form>
-                 </div>
-                 <div className={styles.menu}>    
-                    <Link to="/signIn"><AccountCircleIcon
-                        style={{color: "black", fontSize: 35 }}
-                    
-                    /></Link>
-                    
-                    <a href='# '><ShoppingCartIcon
-                        style={{ color: "black", fontSize: 35 }}
-                    /></a>
-                 </div>
+                 
             
             </header>
 

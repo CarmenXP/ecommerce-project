@@ -1,25 +1,32 @@
 header{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    
     margin-top: 0%;
     padding: 15px 0px;
-    align-items: center;
+    
     border-bottom-style: solid ;
     border-color: #cac8c8;
     border-width: 1px;
 }
 
 
-a {
-    text-decoration: none;
-}
+
 
 header a{
-    color: whitesmoke;
+    color: rgb(26, 25, 25);
     padding: 1rem;
     font-size: 23px;
-
+    text-decoration: none;
     
+}
+
+.firstNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img{
@@ -33,6 +40,21 @@ header a{
     
    display: flex; 
    
+}
+menu{
+    align-self: flex-end;
+}
+
+
+nav{
+    align-self: flex-end;
+
+}
+
+nav a{
+    font-size: 16px;
+    color:rgb(146, 142, 137);
+    
 }
 
 

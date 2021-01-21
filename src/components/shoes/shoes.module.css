@@ -7,19 +7,22 @@
 .card{
     display: flex;
     flex-direction: column;
-    border: 1px solid #94618E;
+    border: 1px solid #ecebeb;
     margin:5px;
-    box-shadow: 0 4px 8px 0 rgba(139, 0, 139, 0.3), 0 6px 20px 0 rgba(139, 0, 139, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.4);
     
 }
-h3{
-    color: #94618E;
+.cardBody h4{
+    color: rgb(66, 15, 6); ;
     margin:8px 0px;
     text-align: center;
 
 }
 .price{
-    text-align: center;
+    text-align: lefts;
+    color: rgb(136, 34, 16);
+    margin: 5px 0px 10px 12px;
+    font-size: 15px;
 }
 .medium{
     width: 241px;

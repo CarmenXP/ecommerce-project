@@ -1,27 +1,33 @@
 .contentSlider{
-    width: 1000px;
-    height: 620px;
+    width: 924px;
+    height: 657px;
     position: relative;
-    left: 165px;
+    left: 215px;
     overflow: hidden;
-    text-align: center;
-
+    margin: 25px 0px;
 }
 
 .slider{
-    
-    width: 1000px;
-    height: 620px;
+    width: 876px;
+    height: 657px;
     text-align: center;
+    position: relative;
 }
 
 .imageSlider img{
-    width: 1000px;
-    height: 620px;
+    width: 876px;
+    height: 657px;
     position: relative;
+    text-align: center;
     
 }
 
 .sliderTitle{
-
+ font-size: 66px;
+ font-weight: bolder;
+ color: white;
+ position: relative;
+ bottom: 18rem;
+ margin: 0px;
 }
+

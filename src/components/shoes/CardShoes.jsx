@@ -11,9 +11,9 @@ export default function CardShoes(props){
                   <img className={styles.medium} src={props.imagen}/>
     
                   <div className={styles.cardBody}>
-                      <h3>{props.producto}</h3>
-                      <div className={styles.price}>Precio: $ {props.precio}</div>
-                      <a href="#"><span>Ver</span></a>
+                      <h4>{props.producto}</h4>
+                      <div className={styles.price}>Precio: ${props.precio}.00 MXN</div>
+                      
                   </div>
                 </div>
                

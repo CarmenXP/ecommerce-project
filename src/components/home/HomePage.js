@@ -9,7 +9,7 @@ export default function HomePage(){
 const images=[
    {
       id: 1,
-      title: "New In",
+      title: "New  In",
       image:"https://peleymele.com/wp-content/uploads/2015/03/boho-chic-coachella.jpg"
    },
    {

@@ -7,12 +7,10 @@ export default function CardClothes(props){
         
 
             <div key="{props.id}" className={styles.card}>
-              <img className={styles.medium} src={props.imagen}/>
-
+                <Link to={`/blouses/${props.id}`}><img className={styles.medium} src={props.imagen}/></Link>
               <div className={styles.cardBody}>
-                  <h3>{props.producto}</h3>
-                  <div className={styles.price}>Precio: $ {props.precio}</div>
-                  <Link to={`/blouses/${props.id}`}>Ver</Link>
+                  <h4>{props.producto}</h4>
+                  <div className={styles.price}>Precio: ${props.precio}.00 MXN</div>
               </div>
             </div>
            
