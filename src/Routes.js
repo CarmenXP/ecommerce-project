@@ -14,10 +14,10 @@ export default function Routes(){
     return(
 
     <Switch>
-        <Route  exact path="/" component={HomePage}/>
+        <Route exact path="/" component={HomePage}/>
         <Route path="/clothes" component={ClothesPage}/>
         <Route path="/shoes" component={ShoesPage}/>
-        <Route path="/blouses/:id" component={ViewDetail}/>
+        <Route exact path="/products/:productid" component={ViewDetail}/>
         <Route path="/signIn" component={SignIn}/>
        
     </Switch>
