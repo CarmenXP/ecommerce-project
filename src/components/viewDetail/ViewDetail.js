@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import ViewDetailPage from './ViewDetailPage';
 
 
 const ViewDetail = ({match}) =>{
@@ -19,10 +20,14 @@ const ViewDetail = ({match}) =>{
   
     return(
         <div >
-            <h1>Detalle</h1>
-            <span>{product.producto}</span> 
-            <span>{product.precio}</span>
-            <img src={product.imagen}/>
+          <ViewDetailPage
+            producto={product.producto}
+            precio={product.precio}
+            imagen={product.imagen}
+            id={product.id}
+            descripcion={product.descripcion}
+          />
+            
         </div>
     )
 }
