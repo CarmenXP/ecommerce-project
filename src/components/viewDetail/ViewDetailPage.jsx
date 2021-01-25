@@ -4,16 +4,18 @@ import styles from './viewDetail.module.css';
 export default function ViewDetailPage(props){
     return(
         <div className={styles.viewContent}>
-            <div>
-                <img className ={styles.imageProduct} src={props.imagen} alt="product"/>
+            <div className ={styles.imageProduct}>
+                <img  src={props.imagen} alt="product"/>
             </div>
             <div className={styles.detail}>
-                <h2 className={styles.title}>{props.producto}</h2>
-                <div>
+                <h1 className={styles.title}>{props.producto}</h1>
+                <div className={styles.description}>
                     <p>{props.descripcion}</p>
                     <p>Precio:$ {props.precio}.00 MXN</p>
-                    <span>Talla: <a>CH</a> <a>M</a> <a>G</a></span>
-                    
+                    <span>Talla: <a href="#">CH</a> <a href="#">M</a> <a href="#">G</a></span>
+                    <br/>
+                    <span>Valoración media:</span>
+                    <br/>
                     <button 
                          type="submit"className={styles.cartButton}
 
