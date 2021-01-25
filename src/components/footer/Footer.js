@@ -42,7 +42,8 @@ const Footer = () => {
                         <span><input 
                         type="email"
                         placeholder="email@email"
-                        /><button type="submit">sent</button></span>
+                        /><button className={styles.go} type="submit"
+                        >sent</button></span>
                     </form>
                 </div>
 

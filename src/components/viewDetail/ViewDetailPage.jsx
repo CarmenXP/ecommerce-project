@@ -11,10 +11,9 @@ export default function ViewDetailPage(props){
                 <h1 className={styles.title}>{props.producto}</h1>
                 <div className={styles.description}>
                     <p>{props.descripcion}</p>
-                    <p>Precio:$ {props.precio}.00 MXN</p>
-                    <span>Talla: <a href="#">CH</a> <a href="#">M</a> <a href="#">G</a></span>
-                    <br/>
-                    <span>Valoración media:</span>
+                    <span>Precio: <p>${props.precio}.00 MXN</p></span>
+                    <p>Talla: <a href="#">CH</a> <a href="#">M</a> <a href="#">G</a></p>
+                    <p>Valoración media:</p>
                     <br/>
                     <button 
                          type="submit"className={styles.cartButton}
