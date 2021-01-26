@@ -1,8 +1,10 @@
 import React,{useState, useEffect} from 'react';
 import ViewDetailPage from './ViewDetailPage';
+import styles from './viewDetail.module.css';
+import CancelIcon from '@material-ui/icons/Cancel';
 
 
-const ViewDetail = ({match}) =>{
+const ViewDetail = ({match, history}) =>{
     const [product, setProduct] = useState([]);
     {/*const{match:{params:{id}}}=props*/}
     console.log(match)
@@ -20,6 +22,13 @@ const ViewDetail = ({match}) =>{
   
     return(
         <div >
+          
+            
+            <CancelIcon 
+              style={{color: "black", fontSize: 25}}
+              onClick={()=>history.goBack()}
+            />
+          
           <ViewDetailPage
             producto={product.producto}
             precio={product.precio}
