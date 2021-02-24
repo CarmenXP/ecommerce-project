@@ -5,6 +5,8 @@ import {NavLink} from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Cart from './components/cart/Cart';
+import {Provider} from 'react-redux';
+import store from './redux/store';
 
 export default function App() {
 
@@ -16,6 +18,7 @@ export default function App() {
     setState({...state, show: !state.show})
   }
   return (
+    <Provider store = {store}>
     <div>
       <div className= "headband"></div> 
       <Header/>
@@ -39,6 +42,7 @@ export default function App() {
 
       <Footer/>
     </div>
+    </Provider>
   );
 }
 
