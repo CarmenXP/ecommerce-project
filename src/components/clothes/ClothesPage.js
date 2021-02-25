@@ -1,12 +1,48 @@
-import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useEffect} from 'react';
+//import { Link } from 'react-router-dom';
 import CardClothes from './CardClothes';
 import styles from './clothes.module.css';
-
+import {useDispatch, useSelector} from 'react-redux';
+import {getProducts as listProducts} from '../../redux/actions/productActions';
 
 export default function ClothesPage(){
 
-  const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
+  const getProducts = useSelector((state)=> state.getProducts);
+  const {products, loading, error} = getProducts;
+
+  useEffect(()=>{
+    dispatch(listProducts());
+  }, [dispatch]);
+
+  return(
+    <div>
+      <h1>Blusas</h1>
+      <div className={styles.content}>
+        {loading ? (
+          <h2>Loading...</h2>
+        ) : error ? (
+          <h2>{error}</h2>
+        ) : (
+          products.map((product) => (
+            <CardClothes
+              id={product._id}
+              producto={product.product}
+              precio={product.price}
+              descripcion={product.description}
+              imagen={product.image }
+            />
+          )
+        )
+        
+        
+       )}  
+      </div>
+    </div>
+) 
+
+
+  {/*const [products, setProducts] = useState([]);
 
   useEffect(() => {
     fetch("https://database-e-commerce-default-rtdb.firebaseio.com/products/blouses.json")
@@ -31,6 +67,6 @@ export default function ClothesPage(){
             ))}  
           </div>
         </div>
-    )
-    
+    ) 
+  */}  
 }
