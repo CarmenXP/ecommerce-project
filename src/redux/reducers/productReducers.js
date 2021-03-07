@@ -1,5 +1,9 @@
-import { StarRate } from '@material-ui/icons';
-import { GET_PRODUCTS_FAIL, GET_PRODUCTS_REQUEST, GET_PRODUCTS_SUCCESS, GET_PRODUCT_REQUEST } from '../constants/productConstants';
+import { GET_PRODUCTS_FAIL, 
+        GET_PRODUCTS_REQUEST, 
+        GET_PRODUCTS_SUCCESS, 
+        GET_PRODUCT_REQUEST,
+        GET_PRODUCT_SUCCESS,
+        GET_PRODUCT_FAIL} from '../constants/productConstants';
 
 export const getProductsReducer = (state = {products:[]}, action) =>{
     switch(action.type){
@@ -24,19 +28,19 @@ export const getProductsReducer = (state = {products:[]}, action) =>{
     }
 };
 
-export const getProductDetailReducer = (state = {products:{}}, action) =>{
+export const getProductDetailReducer = (state = {product:{}}, action) =>{
     switch(action.type){
         case GET_PRODUCT_REQUEST:
             return{
                 loading: true,
                 
             };
-        case GET_PRODUCTS_SUCCESS:
+        case GET_PRODUCT_SUCCESS:
             return{
                 product: action.payload,
                 loading: false,
             };
-        case GET_PRODUCTS_FAIL:
+        case GET_PRODUCT_FAIL:
             return{
                 loading: false,
                 error: action.payload

@@ -1,19 +1,22 @@
 import React, {Fragment} from 'react'
-import styles from './cart.module.css'
-import CartRow from './CartRow'
+import {useDispatch, useSelector} from 'react-redux';
 
-export default function Cart({show=false, onCancel}){
+
+export default function Cart(){
+
+    const cart = useSelector((state)=> state.cart);
+    const {cartItems} = cart;
+    console.log(cart)
     return(
         <Fragment>
-            <div 
-            onClick={onCancel}
-            className={
-                styles.cartOverlay}></div>
-            <div className={
-                show ? styles.cartHolder :
-                `${styles.cartOverlay} ${styles.hidden}`}>
-                 <CartRow/>  
-            </div> 
+            <p>Este es el carrito</p>
+
+            {cartItems.length === 0 ? (
+                
+                <p>Carrito vacio</p>
+            ):(
+                cartItems.map((item)=>(<p>{item.article}</p>))
+            )}
             
 
         </Fragment>

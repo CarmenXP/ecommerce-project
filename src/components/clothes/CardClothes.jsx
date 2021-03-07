@@ -6,7 +6,7 @@ export default function CardClothes(props){
     return(
         
 
-            <div key="{props.id}" className={styles.card}>
+            <div key={props.id} className={styles.card}>
                 <Link to={`/products/${props.id}`}>
                     <img className={styles.medium} src={props.imagen}/>
                 </Link>

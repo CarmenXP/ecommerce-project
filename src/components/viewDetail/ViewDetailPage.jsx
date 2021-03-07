@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './viewDetail.module.css';
 import StarIcon from '@material-ui/icons/Star';
+import { useState } from 'react';
 
 export default function ViewDetailPage(props){
+    const[qty, setQty]= useState(1)
+
     return(
         <div className={styles.viewContent}>
             <div className ={styles.imageProduct}>
@@ -23,11 +26,21 @@ export default function ViewDetailPage(props){
                         <span> <StarIcon style={{ fontSize: 25}}/></span>
                         
                     </div>
+                    <br/>
+                    <p> Cantidad
+                        <select value={qty} onChange={(e)=> setQty(e.target.value)}> 
+                            {[...Array(props.disponible).keys()].map((x) =>(
+                                <option key ={x + 1} value ={x + 1}>
+                                    {x + 1}
+                                </option>
+                            ))}
+                        </select>
+                    </p>
                     
                     <br/>
                     <button 
-                         type="submit"className={styles.cartButton}
-
+                         type="button"className={styles.cartButton}
+                         onClick = {()=>props.agregar(props.id, qty)}
                     >Añadir a carrito</button>
 
                 </div>

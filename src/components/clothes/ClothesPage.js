@@ -10,6 +10,7 @@ export default function ClothesPage(){
   const dispatch = useDispatch();
   const getProducts = useSelector((state)=> state.getProducts);
   const {products, loading, error} = getProducts;
+  console.log(getProducts)
 
   useEffect(()=>{
     dispatch(listProducts());
