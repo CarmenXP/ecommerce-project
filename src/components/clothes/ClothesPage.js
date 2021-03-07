@@ -28,10 +28,10 @@ export default function ClothesPage(){
           products.map((product) => (
             <CardClothes
               id={product._id}
-              producto={product.product}
-              precio={product.price}
-              descripcion={product.description}
-              imagen={product.image }
+              key={product._id}
+              product={product.product}
+              price={product.price}
+              image={product.image }
             />
           )
         )

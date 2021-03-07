@@ -22,7 +22,7 @@ const ViewDetail = ({match, history}) =>{
   }, [dispatch, match, product]);
 
   const addToCardHandler = ()=>{
-    dispatch(addToCard(product._id, product.qty));
+    dispatch(addToCard(product._id, 1));
     history.push(`/cart`);
   }
 
@@ -41,14 +41,14 @@ const ViewDetail = ({match, history}) =>{
         <h2>{error}</h2>
       ) : (
         <ViewDetailPage
-            producto={product.product}
-            precio={product.price}
-            imagen={product.image}
+            product={product.product}
+            price={product.price}
+            image={product.image}
             id={product._id}
-            descripcion={product.description}
-            disponible ={product.countInStock}
-            agregar = {addToCardHandler}
-            qty = {product.qty}
+            description={product.description}
+            countInStock ={product.countInStock}
+            addToCardHandler = {addToCardHandler}
+            
         />
 
       )

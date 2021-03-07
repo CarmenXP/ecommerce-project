@@ -2,17 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styles from './clothes.module.css';
 
-export default function CardClothes(props){
+export default function CardClothes({id, image, price, product, key}){
     return(
         
 
-            <div key={props.id} className={styles.card}>
-                <Link to={`/products/${props.id}`}>
-                    <img className={styles.medium} src={props.imagen}/>
+            <div key={key} className={styles.card}>
+                <Link to={`/products/${id}`}>
+                    <img className={styles.medium} src={image}/>
                 </Link>
               <div className={styles.cardBody}>
-                  <h4>{props.producto}</h4>
-                  <div className={styles.price}>Precio: ${props.precio}.00 MXN</div>
+                  <h4>{product}</h4>
+                  <div className={styles.price}>Precio: ${price}.00 MXN</div>
               </div>
             </div>
            
