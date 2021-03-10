@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux';
-import {addToCard, removeFromCart} from '../../redux/actions'
+import {addToCard, removeFromCart} from '../../redux/actions/cartActions'
 import CartItem from './CartItem'
 
 export default function Cart(){

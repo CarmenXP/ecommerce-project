@@ -1,13 +1,16 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import ViewDetailPage from './ViewDetailPage';
 
 import CancelIcon from '@material-ui/icons/Cancel';
 import {useSelector, useDispatch} from 'react-redux';
 import {getProductDetails} from '../../redux/actions/productActions';
 import {addToCard} from '../../redux/actions/cartActions';
+import { Fragment } from 'react';
 
 const ViewDetail = ({match, history}) =>{
   const dispatch = useDispatch();
+  const[qty, setQty]= useState(1)
+
 
   const productDetail = useSelector((state)=> state.getProductDetail);
   const {loading, error, product} = productDetail;
@@ -22,7 +25,7 @@ const ViewDetail = ({match, history}) =>{
   }, [dispatch, match, product]);
 
   const addToCardHandler = ()=>{
-    dispatch(addToCard(product._id, 1));
+    dispatch(addToCard(product._id, qty));
     history.push(`/cart`);
   }
 
@@ -40,16 +43,41 @@ const ViewDetail = ({match, history}) =>{
       ) : error ? (
         <h2>{error}</h2>
       ) : (
+        <Fragment>
+
+
         <ViewDetailPage
-            product={product.product}
-            price={product.price}
-            image={product.image}
-            id={product._id}
-            description={product.description}
-            countInStock ={product.countInStock}
-            addToCardHandler = {addToCardHandler}
-            
+          image ={product.image}
+          price={product.price} 
+          product={product.product} 
+          id ={product._id}  
+          description={product.description} 
+          addToCardHandler={addToCardHandler} 
+          qty={qty}
         />
+
+                <p> Cantidad
+                  <select value={qty} onChange={(e)=> setQty(e.target.value)}> 
+                    {[...Array(product.countInStock).keys()].map((x) =>(
+                    <option key ={x + 1} value ={x + 1}>
+                        {x + 1}
+                    </option>
+                    ))}
+                  </select>
+              </p>
+                    
+                    
+                   
+
+             
+
+
+       
+
+        </Fragment>
+        
+
+       
 
       )
 
