@@ -1,18 +1,20 @@
 import React from "react"
-import { Fragment } from "react";
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import styles from "./cartItem.module.css"
 
 
 export default function CartItem({item, qtyChangeHandler, removeFromCartHandler}) {
  const {image, product, price, article, qty, countInStock} = item 
     return(
-        <Fragment>
-            <img src ={image} alt= {article}/>
-            <div>
+        <div className={styles.cardCart}>
+            <img className={styles.imgCart}src ={image} alt= {article}/>
+            <div className={styles.articleName}>
                 <p>{article}</p>
             </div>
-            <div>
-                <p>cantidad
+            <div className ={styles.selectQ}>
+                <p >
                     <select
+                        className ={styles.selectCart}
                         value={qty}
                         onChange={(e)=> qtyChangeHandler(product, e.target.value)}
                     >
@@ -24,21 +26,23 @@ export default function CartItem({item, qtyChangeHandler, removeFromCartHandler}
                     </select>
                 </p>
             </div>
-            <div>
-                <p>Precio ${price} MXN</p>
+            <div className ={styles.priceCart}>
+                <p>Precio: ${price} MXN</p>
             </div>
-            <div>
-                <p>Total</p>
+            <div className={styles.totalCart}>
+                <p>Total: $   {Number(qty)*price} MXN</p>
             </div>
             <div>
                 <button
                     type="button"
                     onClick={()=>removeFromCartHandler(product)}
                 >
-                    quitar
+                    <DeleteForeverIcon
+                        style={{ color: "black", fontSize: 25 }}
+                    />
                 </button>
             </div>
-        </Fragment>
+        </div>
             
 
 

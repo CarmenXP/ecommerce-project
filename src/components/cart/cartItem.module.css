@@ -1,0 +1,25 @@
+.cardCart{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgCart{
+    height: 160px;
+    width: 160px;
+
+}
+.articleName{
+    width: 190px;
+    background-color: hotpink;
+}
+.selectQ{
+    background-color: aquamarine;
+}
+
+.priceCart{
+    background-color: burlywood;
+}
+.totalCart{
+    background-color: cadetblue;
+}

@@ -1,7 +1,9 @@
-import React, {Fragment, useEffect} from 'react'
+import React, {Fragment, useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {addToCard, removeFromCart} from '../../redux/actions/cartActions'
-import CartItem from './CartItem'
+import {addToCard, removeFromCart} from '../../redux/actions/cartActions';
+import CartItem from './CartItem';
+import styles from './cart.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Cart(){
 
@@ -32,34 +34,35 @@ export default function Cart(){
 
     return(
         <Fragment>
-            <p>Este es el carrito</p>
+            <div className={styles.contentCart}>
+                <h2>Carrito de compras</h2>
+                <Link to = "/clothes">Seguir comprando</Link>
 
-            {cartItems.length === 0 ? (
-                
-                <p>Carrito vacio</p>
-            ):(
-                cartItems.map((item)=>(
-                    <div>
+                {cartItems.length === 0 ? ( 
+                 <>   
+                    <h3>Carrito vacio</h3>
+                    <Link to = "/clothes">Regresar</Link>
+                </>
+                ):(
+                    cartItems.map((item)=>(
+                        <>
                         <CartItem
                         item ={item}
                         key = {item.product}
                         qtyChangeHandler = {qtyChangeHandler}
                         removeFromCartHandler = {removeFromCartHandler}
-                    />
+                        />
 
-                    <div>
-                        <p>Total $ {cartTotal} MXN</p>
-                        <button>
-                            Tramitar Pedido
-                        </button>
-                    </div>
-
-                    </div>
-                    
-                ))
-            )}
-            
-
+                        <div>
+                            <p>Total $ {cartTotal} MXN</p>
+                            <button className={styles.checkoutButton}>
+                                Tramitar Pedido
+                            </button>
+                         </div>  
+                        </>      
+                    ))       
+                )}    
+            </div>
         </Fragment>
 
     )

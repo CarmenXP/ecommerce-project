@@ -38,9 +38,9 @@ const Header = () => {
 
                             /></Link>
 
-                            <a href='# '><ShoppingCartIcon
+                            <Link to="/cart"><ShoppingCartIcon
                                 style={{ color: "black", fontSize: 35 }}
-                            /></a>
+                            /></Link>
                          </div>
                     </div>
                  <nav>
