@@ -12,7 +12,7 @@ export const getProducts = () => async(dispatch) =>{
     try{
         dispatch({type: GET_PRODUCTS_REQUEST});
 
-        const {data}= await axios.get('http://localhost:8080/products');
+        const {data}= await axios.get('https://backendprojectecommerce.herokuapp.com/products');
 
         dispatch({
             type: GET_PRODUCTS_SUCCESS,
@@ -33,7 +33,7 @@ export const getProductDetails = (id) => async(dispatch) =>{
     try{
         dispatch({type: GET_PRODUCT_REQUEST});
 
-        const {data}= await axios.get(`http://localhost:8080/products/${id}`);
+        const {data}= await axios.get(`https://backendprojectecommerce.herokuapp.com/products/${id}`);
 
         dispatch({
             type: GET_PRODUCT_SUCCESS,

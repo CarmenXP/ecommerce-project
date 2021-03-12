@@ -2,7 +2,7 @@ import { ADD_TO_CART, REMOVE_FROM_CART } from '../constants/cartConstants';
 import axios from 'axios';
 
 export const addToCard = (id, qty) => async (dispatch, getState)=>{
-    const {data} = await axios.get(`http://localhost:8080/products/${id}`);
+    const {data} = await axios.get(`https://backendprojectecommerce.herokuapp.com/products/${id}`);
 
     dispatch({
         type: ADD_TO_CART,

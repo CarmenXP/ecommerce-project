@@ -1,6 +1,6 @@
-import React from "react"
-import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-import styles from "./cartItem.module.css"
+import React from "react";
+import DeleteIcon from '@material-ui/icons/Delete';
+import styles from "./cartItem.module.css";
 
 
 export default function CartItem({item, qtyChangeHandler, removeFromCartHandler}) {
@@ -37,7 +37,7 @@ export default function CartItem({item, qtyChangeHandler, removeFromCartHandler}
                     type="button"
                     onClick={()=>removeFromCartHandler(product)}
                 >
-                    <DeleteForeverIcon
+                    <DeleteIcon
                         style={{ color: "black", fontSize: 25 }}
                     />
                 </button>

@@ -3,10 +3,13 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+    border-bottom-style: solid ;
+    border-color: #d3cece;
+    border-width: 1px;
 }
 .imgCart{
     height: 160px;
-    width: 160px;
+    width: 140px;
 
 }
 .articleName{
@@ -18,8 +21,10 @@
 }
 
 .priceCart{
+    width: 190px;
     background-color: burlywood;
 }
 .totalCart{
+    width: 190px;
     background-color: cadetblue;
 }
