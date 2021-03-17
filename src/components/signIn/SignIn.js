@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './signin.module.css';
 
 const SignIn =()=>{
@@ -14,7 +15,7 @@ const SignIn =()=>{
                         <input className={styles.password} type="password" placeholder="password" />
                     </div>  
                     <button type="submit">Iniciar sesión</button>
-                    <p>¿Nuevo aquí? Crea una cuenta <a href="#">aquí</a></p>
+                    <p>¿Nuevo aquí? Crea una cuenta <Link to = {'/signUp'}>aquí</Link></p>
                 </div>
                 <div>
                     <p>----------- O bien ----------- </p>

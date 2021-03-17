@@ -6,6 +6,7 @@ import ShoesPage from './components/shoes/ShoesPage';
 import ViewDetail from './components/viewDetail/ViewDetail';
 import SignIn from './components/signIn/SignIn';
 import Cart from './components/cart/Cart';
+import Register from './components/register/Register';
 
 
 
@@ -20,6 +21,7 @@ export default function Routes(){
         <Route path="/shoes" component={ShoesPage}/>
         <Route exact path="/products/:id" component={ViewDetail}/>
         <Route path="/signIn" component={SignIn}/>
+        <Route path="/signUp" component={Register}/>
         <Route path = "/cart" component={Cart}/>
        
     </Switch>
