@@ -21,8 +21,8 @@ const initialState = {
             : null,
     },
     cart:{
-        carItems: localStorage.getItem('carItems')
-        ?  JSON.parse(localStorage.getItem('carItems'))
+        cartItems: localStorage.getItem('cartItems')
+        ?  JSON.parse(localStorage.getItem('cartItems'))
         : []
     }
 }

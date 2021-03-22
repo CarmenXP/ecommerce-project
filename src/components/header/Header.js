@@ -46,7 +46,7 @@ const Header = () => {
                  <nav>
                     <NavLink  exact activeClassName="active"  to="/">Home </NavLink>
                     <NavLink activeClassName="active"  to="/clothes"> Ropa de mujer</NavLink>
-                    <NavLink activeClassName="active"  to="/shoes"> Zapatos </NavLink>
+                    
 
                 </nav>
                  

@@ -36,6 +36,7 @@ export const signin = (email, password) => async(dispatch) => {
     try{
         const {data} = await axios.post('https://backendprojectecommerce.herokuapp.com/auth', {email, password});
         dispatch({type: USER_SIGNIN_SUCCESS, payload: data.data});
+        console.log(data.data)
         localStorage.setItem('userInfo', JSON.stringify(data.data));
     }catch(error){
         dispatch({
