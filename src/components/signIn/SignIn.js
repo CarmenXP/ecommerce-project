@@ -1,18 +1,48 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import{useDispatch, useSelector} from 'react-redux';
+import {signin} from '../../redux/actions/userActions';
 import { Link } from 'react-router-dom';
 import styles from './signin.module.css';
 
-const SignIn =()=>{
+const SignIn =({history})=>{
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const userSignin = useSelector((state) => state.userSignin);
+    const {userInfo, loading, error} = userSignin;
+
+    const dispatch = useDispatch();
+    const submitHandler = (e) => {
+        e.preventDefault();
+        dispatch(signin(email, password));
+    };
+    useEffect(()=>{
+        if (userInfo){
+            history.push('/home')
+        }
+    }, [history, userInfo])
+
     return(
         <div className={styles.contentSign}>
-            <form className={styles.signin}>
+            <form className={styles.signin} onSubmit={submitHandler}>
                 <h2>Iniciar Sesión</h2>
                 <div>
                     <div>
-                        <input  className={styles.mail}type="email" placeholder="example@example"/>
+                        <input  className={styles.mail}
+                        type="email" 
+                        placeholder="example@example"
+                        name = "email"
+                        onChange={(e)=> setEmail(e.target.value)}
+                        />
                     </div>
                     <div>
-                        <input className={styles.password} type="password" placeholder="password" />
+                        <input className={styles.password} 
+                        type="password" 
+                        placeholder="password" 
+                        name= "password"
+                        onChange={(e) => setPassword(e.target.value)}
+                        />
                     </div>  
                     <button type="submit">Iniciar sesión</button>
                     <p>¿Nuevo aquí? Crea una cuenta <Link to = {'/signUp'}>aquí</Link></p>
