@@ -1,12 +1,28 @@
 import React from 'react';
 import{Link, NavLink} from 'react-router-dom';
+import {useSelector, useDispatch} from 'react-redux';
 import styles from './header.module.css';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-
+import {signout} from '../../redux/actions/userActions';
 
 
 const Header = () => {
+
+    const cart = useSelector((state)=> state.cart);
+    const {cartItems}= cart;
+
+    const cartCount = () =>{
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+    };
+
+    const userSignin = useSelector((state) => state.userSignin);
+    const {userInfo} = userSignin;
+    const dispatch = useDispatch();
+    const signOutHandler = () =>{
+        dispatch(signout());
+    }
+
 
     const logo= "https://i.pinimg.com/474x/2c/2a/03/2c2a03dc02777014a1287b76f5dc1df2.jpg"
     return ( 
@@ -32,15 +48,17 @@ const Header = () => {
 
                              </form>
                          </div>
-                         <div className={styles.menu}>    
+                         <div className={styles.menu}>  
+                            {}  
                             <Link to="/signIn"><AccountCircleIcon
-                                style={{color: "black", fontSize: 35 }}
-
-                            /></Link>
+                                style={{color: "black", fontSize: 35 }}/>
+                                
+                            </Link>
 
                             <Link to="/cart"><ShoppingCartIcon
                                 style={{ color: "black", fontSize: 35 }}
-                            /></Link>
+                            /><span>{cartCount()}</span>
+                            </Link>
                          </div>
                     </div>
                  <nav>

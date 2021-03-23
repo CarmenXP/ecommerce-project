@@ -18,10 +18,8 @@ const SignIn =({history})=>{
         dispatch(signin(email, password));
     };
     useEffect(()=>{
-        if (userInfo){
-            history.push('/home')
-        }
-    }, [history, userInfo])
+        
+    }, [])
 
     return(
         <div className={styles.contentSign}>
