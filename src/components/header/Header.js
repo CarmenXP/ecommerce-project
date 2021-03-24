@@ -4,6 +4,8 @@ import {useSelector, useDispatch} from 'react-redux';
 import styles from './header.module.css';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import SearchIcon from '@material-ui/icons/Search';
 import {signout} from '../../redux/actions/userActions';
 
 
@@ -43,7 +45,9 @@ const Header = () => {
                                         type="texto"
                                         placeholder="Buscar"
                                      />
-                                    <button type="submit">B</button>
+                                    <button type="submit"><SearchIcon
+                                        style={{ color: "black", fontSize: 15 }}
+                                    /></button>
                                 </span> 
 
                              </form>
@@ -54,6 +58,7 @@ const Header = () => {
                                 style={{color: "black", fontSize: 35 }}/>
                                 
                             </Link>
+                            <Link to="/myfavorites"><FavoriteIcon style={{fontSize:35}}/></Link>
 
                             <Link to="/cart"><ShoppingCartIcon
                                 style={{ color: "black", fontSize: 35 }}
@@ -63,7 +68,7 @@ const Header = () => {
                     </div>
                  <nav>
                     <NavLink  exact activeClassName="active"  to="/">Home </NavLink>
-                    <NavLink activeClassName="active"  to="/clothes"> Ropa de mujer</NavLink>
+                    <NavLink activeClassName="active"  to="/clothes"> Clothes</NavLink>
                     
 
                 </nav>
