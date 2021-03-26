@@ -42,11 +42,12 @@ const Header = () => {
                              <form>
                                 <span>
                                     <input
-                                        type="texto"
+                                        className={styles.searchBar}
+                                        type="search"
                                         placeholder="Buscar"
                                      />
-                                    <button type="submit"><SearchIcon
-                                        style={{ color: "black", fontSize: 15 }}
+                                    <button type="submit" className={styles.searchSent}><SearchIcon
+                                        style={{ color: "white", fontSize: 18 }}
                                     /></button>
                                 </span> 
 

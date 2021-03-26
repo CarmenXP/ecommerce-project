@@ -41,6 +41,18 @@ header a{
    display: flex; 
    
 }
+.searchBar{
+    border: solid 1px;
+    border-color: rgb(177, 170, 161);
+    height: 27px;
+}
+.searchSent{
+    border: solid 1px;
+    border-color: rgb(177, 170, 161);
+    height: 27px;
+    background-color: rgb(75, 71, 71);
+
+}
 menu{
     align-self: flex-end;
 }

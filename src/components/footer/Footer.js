@@ -7,6 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 
 
+
 const Footer = () => {
     return ( 
         <footer>
@@ -40,10 +41,12 @@ const Footer = () => {
                     <h4>Suscríbete a nuestra <br/> Newsletter</h4>
                     <form>
                         <span><input 
+                        className={styles.news}
                         type="email"
-                        placeholder="email@email"
+                        placeholder="     
+                        email"
                         /><button className={styles.go} type="submit"
-                        >sent</button></span>
+                        >Enviar</button></span>
                     </form>
                 </div>
 
