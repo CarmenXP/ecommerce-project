@@ -30,26 +30,30 @@ header a{
 }
 
 .logo img{
-    width: 100px;
-    height: 100px;
-    background-color: slategray;
+    width: 370px;
+    height: 85px;
+    
     
 }
 
 .search {
     
    display: flex; 
+   box-sizing: border-box;
+   background-color: blueviolet;
    
 }
 .searchBar{
     border: solid 1px;
     border-color: rgb(177, 170, 161);
-    height: 27px;
+    height: 32px;
+    width: 200px;
+    
 }
 .searchSent{
-    border: solid 1px;
-    border-color: rgb(177, 170, 161);
-    height: 27px;
+    border:none;
+    
+    height: 32px;
     background-color: rgb(75, 71, 71);
 
 }

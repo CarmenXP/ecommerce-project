@@ -1,11 +1,13 @@
 import React,{useEffect, useState} from 'react';
-import ViewDetailPage from './ViewDetailPage';
+//import ViewDetailPage from './ViewDetailPage';
 
 import CancelIcon from '@material-ui/icons/Cancel';
 import {useSelector, useDispatch} from 'react-redux';
 import {getProductDetails} from '../../redux/actions/productActions';
 import {addToCard} from '../../redux/actions/cartActions';
 import { Fragment } from 'react';
+import styles from './viewDetail.module.css';
+import StarIcon from '@material-ui/icons/Star';
 
 const ViewDetail = ({match, history}) =>{
   const dispatch = useDispatch();
@@ -44,19 +46,26 @@ const ViewDetail = ({match, history}) =>{
         <h2>{error}</h2>
       ) : (
         <Fragment>
-
-
-        <ViewDetailPage
-          image ={product.image}
-          price={product.price} 
-          product={product.product} 
-          id ={product._id}  
-          description={product.description} 
-          addToCardHandler={addToCardHandler} 
-          qty={qty}
-        />
-
-                <p> Cantidad
+           <div className={styles.viewContent}>
+            <div className ={styles.imageProduct}>
+                <img  src={product.image} alt="product"/>
+            </div>
+            <div className={styles.detail}>
+                <h1 className={styles.title}>{product.product}</h1>
+                <div className={styles.description}>
+                    <p>{product.description}</p>
+                    <span>Precio: <p>${product.price}.00 MXN</p></span>
+                    <p>Talla: <a href="#">CH</a> <a href="#">M</a> <a href="#">G</a></p>
+                    <div className={styles.rating}>
+                        <span>Valoración media:</span>
+                        <span> <StarIcon style={{ fontSize: 25}}/></span>
+                        <span> <StarIcon style={{ fontSize: 25}}/></span>
+                        <span> <StarIcon style={{ fontSize: 25}}/></span>
+                        <span> <StarIcon style={{ fontSize: 25}}/></span>
+                        <span> <StarIcon style={{ fontSize: 25}}/></span>
+                        
+                    </div>
+                    <p> Cantidad
                   <select value={qty} onChange={(e)=> setQty(e.target.value)}> 
                     {[...Array(product.countInStock).keys()].map((x) =>(
                     <option key ={x + 1} value ={x + 1}>
@@ -65,6 +74,34 @@ const ViewDetail = ({match, history}) =>{
                     ))}
                   </select>
               </p>
+
+                    
+                    
+                    <br/>
+                    <button 
+                         type="button"className={styles.cartButton}
+                         onClick = {()=> addToCardHandler(product._id, qty)}
+                    >Añadir a carrito</button>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+
+        {/*<ViewDetailPage
+          image ={product.image}
+          price={product.price} 
+          product={product.product} 
+          id ={product._id}  
+          description={product.description} 
+          addToCardHandler={addToCardHandler} 
+          qty={qty}
+        /> */}
+
+                
                     
                     
                    

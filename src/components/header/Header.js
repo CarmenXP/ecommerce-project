@@ -7,6 +7,8 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import SearchIcon from '@material-ui/icons/Search';
 import {signout} from '../../redux/actions/userActions';
+import boho from '../../img/boho.png'
+
 
 
 const Header = () => {
@@ -26,30 +28,27 @@ const Header = () => {
     }
 
 
-    const logo= "https://i.pinimg.com/474x/2c/2a/03/2c2a03dc02777014a1287b76f5dc1df2.jpg"
+    //const logo= "../img/logo-boho.png";
     return ( 
        
              <header>
                  <div className={styles.firstNav}> 
                          <div className={styles.logo}>
-                            <a href='#'><img src={logo} /></a>
+                            <a href='#'><img src={boho} alt="iconBrand" /></a>
 
-                         </div>
-                         <div className={styles.name}>
-                             <h2> titulo del e-commerce</h2>
                          </div>
                          <div className={styles.search}>
                              <form>
-                                <span>
+                                
                                     <input
                                         className={styles.searchBar}
                                         type="search"
                                         placeholder="Buscar"
                                      />
                                     <button type="submit" className={styles.searchSent}><SearchIcon
-                                        style={{ color: "white", fontSize: 18 }}
+                                        style={{ color: "white", fontSize: 17 }}
                                     /></button>
-                                </span> 
+                                
 
                              </form>
                          </div>
