@@ -4,9 +4,7 @@ import styles from './gallery.module.css';
 export default function Gallery() {
     return (
       <div className={styles.galleryContent}>
-        <div className={styles.galleryTitle}>
-            <h1 > #Chica Boho</h1>
-        </div>   
+        <h1  className={styles.title}> #Chica Boho</h1>   
         <div className={styles.gallery}> 
           <div>
             <img

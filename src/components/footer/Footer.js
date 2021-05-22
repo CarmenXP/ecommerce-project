@@ -5,6 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import PinterestIcon from '@material-ui/icons/Pinterest';
+import SendIcon from '@material-ui/icons/Send';
 
 
 
@@ -22,7 +23,7 @@ const Footer = () => {
 
                 </div>
                 <div className= {styles.menuBar}>
-                    <h4>Acerca de Maracuyá</h4>
+                    <h4>Acerca de Boho Chic</h4>
                     <ul>
                             <li><a href="#">¿Quiénes somos?</a></li>
                             <li><a href="#">Bolsa de trabajo</a></li>
@@ -46,7 +47,9 @@ const Footer = () => {
                         placeholder="     
                         email"
                         /><button className={styles.go} type="submit"
-                        >Enviar</button></span>
+                        ><SendIcon
+                            style={{color:"white", fontSize: 13}}
+                        /></button></span>
                     </form>
                 </div>
 
@@ -71,7 +74,7 @@ const Footer = () => {
 
             </div>
             <div className={styles.copyRight}>
-                <span> &copy; Maracuyá. Todos los derechos reservados</span>
+                <span> &copy; Boho Chic. Todos los derechos reservados</span>
 
 
 

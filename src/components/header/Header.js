@@ -34,7 +34,7 @@ const Header = () => {
              <header>
                  <div className={styles.firstNav}> 
                          <div className={styles.logo}>
-                            <a href='#'><img src={boho} alt="iconBrand" /></a>
+                            <Link to='/'><img src={boho} alt="iconBrand" /></Link>
 
                          </div>
                          <div className={styles.search}>
@@ -46,7 +46,7 @@ const Header = () => {
                                         placeholder="Buscar"
                                      />
                                     <button type="submit" className={styles.searchSent}><SearchIcon
-                                        style={{ color: "white", fontSize: 17 }}
+                                        style={{ color: "white", fontSize: 16 }}
                                     /></button>
                                 
 
@@ -62,7 +62,7 @@ const Header = () => {
 
                             <Link to="/cart"><ShoppingCartIcon
                                 style={{ color: "black", fontSize: 35 }}
-                            /><span>{cartCount()}</span>
+                            /><span className={styles.count}>{cartCount()}</span>
                             </Link>
                          </div>
                     </div>

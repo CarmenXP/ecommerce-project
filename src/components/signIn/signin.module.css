@@ -1,14 +1,42 @@
 .contentSign{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 25px 0px;
 
+}
+
+h2{
+    margin: 35px 0px;
 }
 .signin{
     display: flex;
     flex-direction: column;
     margin: 25px 0px;
     border: 1px solid #94618E;
+    text-align: center;
+    width: 400px;
+    box-sizing: border-box;
+    
+}
+.mail{
+    width: 75%;
+    height: 32px;
+    margin-bottom: 20px;
+   
+    box-sizing: border-box;
+}
+.password{
+    width: 75%;
+    height: 32px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.login{
+    width: 50%;
+    height: 32px;
+    margin-bottom: 15px;
 }
 
 .googleButton{

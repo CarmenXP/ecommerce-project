@@ -1,0 +1,44 @@
+.mainly{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    border: 1px solid mediumorchid;
+}
+.name{
+    box-sizing: border-box;
+    width: 75%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.email{
+    box-sizing: border-box;
+    width: 75%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.password{
+    box-sizing: border-box;
+    width: 75%;
+    margin-bottom: 20px;
+    height: 30px;    
+
+}
+.confirm{
+    box-sizing: border-box;
+    width: 75%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.register{
+    box-sizing: border-box;
+    width: 75%;
+    margin-bottom: 20px;
+    height: 30px;
+}

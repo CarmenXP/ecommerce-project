@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {useDispatch, useSelector} from 'react-redux';
 import {register} from '../../redux/actions/userActions';
+import styles from "./register.module.css";
 
 const Register = ({history}) =>{
     const[name, setName]= useState('');
@@ -28,42 +29,46 @@ const Register = ({history}) =>{
     }, [history, userInfo]);
 
     return(
-        <div>
-            <h2>Crear una cuenta</h2>
-            <form  onSubmit={submitHandler}>
-                <label>Nombre</label>
+        <div className={styles.mainly}>
+            
+            <form  className={styles.container}   onSubmit={submitHandler}>
+                <h2>Crear una cuenta</h2>
                 <input 
+                    className={styles.name}
                     type="text" 
                     placeholder="nombre"
                     name= "name"
                     onChange ={(e)=> setName(e.target.value)}
                     />
-                <br/>    
-                <label>Correo electrónico</label>
+                   
+                
                 <input 
+                    className={styles.email}
                     type="email" 
                     placeholder="example@example.com"
                     name="email"
                     onChange={(e) => setEmail(e.target.value)}
                     />
-                <br/>    
-                <label>Password</label>
+                   
+                
                 <input 
+                    className={styles.password}
                     type="password" 
                     placeholder="contraseña"
                     name = "password"
                     onChange= {(e)=> setPassword(e.target.value)}
                     />
-                <br/>    
-                <label>Confirmar password</label>
+                    
+                
                 <input 
+                className={styles.confirm}
                 type="password" 
                 placeholder="constraseña"
                 name="confirm password"
                 onChange = {(e) => setConfirmPassword(e.target.value)}
                 />
-                <br/>
-                <button type="submit">Enviar</button>
+                
+                <button  className={styles.register} type="submit">Enviar</button>
 
             </form>
         </div>

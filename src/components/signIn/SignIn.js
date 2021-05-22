@@ -26,23 +26,23 @@ const SignIn =({history})=>{
             <form className={styles.signin} onSubmit={submitHandler}>
                 <h2>Iniciar Sesión</h2>
                 <div>
-                    <div>
+                    
                         <input  className={styles.mail}
                         type="email" 
                         placeholder="example@example"
                         name = "email"
                         onChange={(e)=> setEmail(e.target.value)}
                         />
-                    </div>
-                    <div>
+                    
+                    
                         <input className={styles.password} 
                         type="password" 
                         placeholder="password" 
                         name= "password"
                         onChange={(e) => setPassword(e.target.value)}
                         />
-                    </div>  
-                    <button type="submit">Iniciar sesión</button>
+                      
+                    <button type="submit" className={styles.login}>Iniciar sesión</button>
                     <p>¿Nuevo aquí? Crea una cuenta <Link to = {'/signUp'}>aquí</Link></p>
                 </div>
                 <div>
