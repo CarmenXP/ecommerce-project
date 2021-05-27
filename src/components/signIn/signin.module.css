@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 25px 0px;
+    margin: 0px 0px;
+    background-image: url('https://ak1.ostkcdn.com/images/products/is/images/direct/d0eb2365c0ca7e7d7a1805e34ede146f903ec47d/Seabrook-Designs-Rainforest-Leaves-Unpasted-Wallpaper.jpg?impolicy=medium');
 
 }
 
@@ -13,30 +14,40 @@ h2{
 .signin{
     display: flex;
     flex-direction: column;
-    margin: 25px 0px;
-    border: 1px solid #94618E;
+    margin: 35px 0px;
+    border: 1px solid rgb(228, 228, 217);
     text-align: center;
     width: 400px;
     box-sizing: border-box;
+    background-color:rgba(246, 242, 243, 0.7) ;
     
 }
 .mail{
     width: 75%;
     height: 32px;
-    margin-bottom: 20px;
-   
+    margin-bottom: 22px;
+    border: solid 1px rgb(212, 204, 188) ;
     box-sizing: border-box;
 }
 .password{
     width: 75%;
     height: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     box-sizing: border-box;
+    border: solid 1px rgb(212, 204, 188) ;
 }
 .login{
     width: 50%;
     height: 32px;
     margin-bottom: 15px;
+    background-color:rgb(200, 179, 138) ;
+    border: solid 1px wheat;
+}
+
+.login:hover{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(207, 169, 99);
 }
 
 .googleButton{
@@ -55,6 +66,13 @@ h2{
     margin: 8px;
     cursor: pointer;
 }
+.othersigns p{
+    margin: 8px 0px;
+}
 .footerSign{
     text-align: center;
+}
+.footerSign a{
+    text-decoration: none;
+    color: black;
 }

@@ -43,9 +43,10 @@ const SignIn =({history})=>{
                         />
                       
                     <button type="submit" className={styles.login}>Iniciar sesión</button>
-                    <p>¿Nuevo aquí? Crea una cuenta <Link to = {'/signUp'}>aquí</Link></p>
+                    
                 </div>
-                <div>
+                <div className={styles.othersigns}>
+                    <p>¿Nuevo aquí? Crea una cuenta <Link to = {'/signUp'}>aquí</Link></p>
                     <p>----------- O bien ----------- </p>
 
                    <img className={styles.googleButton} src="https://cdn.icon-icons.com/icons2/836/PNG/512/Google_icon-icons.com_66793.png"/>
@@ -56,7 +57,7 @@ const SignIn =({history})=>{
             </form>
             <div className={styles.footerSign}>
                 <p>Al iniciar sesión o crear una cuenta, aceptas las <a href="#">Condiciones de 
-                servicio</a> y la <a href="#">Política de privacidad de Maracuyá.</a></p>
+                servicio</a> y la <a href="#">Política de privacidad de Boho Chic.</a></p>
 
             </div>
 

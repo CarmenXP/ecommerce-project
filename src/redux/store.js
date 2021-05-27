@@ -14,6 +14,7 @@ import{
     userSigninReducer
 } from './reducers/userReducers'
 
+
 const initialState = {
     userSignin:{
         userInfo: localStorage.getItem('userInfo')
@@ -39,7 +40,7 @@ const middleware = [thunk];
 
 const store = createStore(
     reducer,
-    initialState,
+    //initialState,
     composeWithDevTools(applyMiddleware(...middleware))
 );
 

@@ -74,10 +74,6 @@ const ViewDetail = ({match, history}) =>{
                     ))}
                   </select>
               </p>
-
-                    
-                    
-                    <br/>
                     <button 
                          type="button"className={styles.cartButton}
                          onClick = {()=> addToCardHandler(product._id, qty)}

@@ -2,43 +2,57 @@
     display: flex;
     flex-direction:column;
     align-items: center;
+    background-image: url('https://ak1.ostkcdn.com/images/products/is/images/direct/d0eb2365c0ca7e7d7a1805e34ede146f903ec47d/Seabrook-Designs-Rainforest-Leaves-Unpasted-Wallpaper.jpg?impolicy=medium');
 }
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 35px 0px;
+    border: 1px solid rgb(228, 228, 217);
     text-align: center;
     width: 400px;
-    border: 1px solid mediumorchid;
+    box-sizing: border-box;
+    background-color:rgba(246, 242, 243, 0.7) ;
+    align-items: center;
 }
 .name{
-    box-sizing: border-box;
     width: 75%;
-    margin-bottom: 20px;
-    height: 30px;
+    height: 32px;
+    margin-bottom: 22px;
+    border: solid 1px rgb(212, 204, 188) ;
+    box-sizing: border-box
 }
 .email{
-    box-sizing: border-box;
     width: 75%;
-    margin-bottom: 20px;
-    height: 30px;
+    height: 32px;
+    margin-bottom: 22px;
+    border: solid 1px rgb(212, 204, 188) ;
+    box-sizing: border-box
 }
 .password{
-    box-sizing: border-box;
     width: 75%;
-    margin-bottom: 20px;
-    height: 30px;    
+    height: 32px;
+    margin-bottom: 22px;
+    border: solid 1px rgb(212, 204, 188) ;
+    box-sizing: border-box   
 
 }
 .confirm{
-    box-sizing: border-box;
     width: 75%;
-    margin-bottom: 20px;
-    height: 30px;
+    height: 32px;
+    margin-bottom: 22px;
+    border: solid 1px rgb(212, 204, 188) ;
+    box-sizing: border-box
 }
 .register{
-    box-sizing: border-box;
-    width: 75%;
-    margin-bottom: 20px;
-    height: 30px;
+    width: 50%;
+    height: 32px;
+    margin-bottom: 15px;
+    background-color:rgb(200, 179, 138) ;
+    border: solid 1px wheat;
+}
+.register:hover{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(207, 169, 99);
 }
