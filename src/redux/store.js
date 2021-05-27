@@ -13,6 +13,7 @@ import{
     userRegisterReducer,
     userSigninReducer
 } from './reducers/userReducers'
+import{likeReducer} from './reducers/likeReducers';
 
 
 const initialState = {
@@ -25,6 +26,11 @@ const initialState = {
         cartItems: localStorage.getItem('cartItems')
         ?  JSON.parse(localStorage.getItem('cartItems'))
         : []
+    },
+    like:{
+        likeItems: localStorage.getItem('likeItems')
+        ?  JSON.parse(localStorage.getItem('likeItems'))
+        : []
     }
 }
 
@@ -33,7 +39,8 @@ const reducer = combineReducers({
     getProducts: getProductsReducer,
     getProductDetail: getProductDetailReducer, 
     userRegister: userRegisterReducer,
-    userSignin: userSigninReducer
+    userSignin: userSigninReducer,
+    like: likeReducer
 });
 
 const middleware = [thunk];

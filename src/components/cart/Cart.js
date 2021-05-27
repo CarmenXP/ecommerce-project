@@ -5,8 +5,7 @@ import CartItem from './CartItem';
 import styles from './cart.module.css';
 import { Link } from 'react-router-dom';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-//import TotalPay from './TotalPay';
-//import styles from "./cartItem.module.css";
+
 
 
 export default function Cart(){
@@ -14,7 +13,7 @@ export default function Cart(){
     const dispatch = useDispatch();
     const cart = useSelector((state)=> state.cart);
     const {cartItems} = cart;
-    console.log(cart)
+    
 
     useEffect(()=> {}, []);
 

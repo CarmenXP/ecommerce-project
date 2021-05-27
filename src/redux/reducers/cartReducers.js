@@ -1,6 +1,6 @@
 import {ADD_TO_CART,
     REMOVE_FROM_CART,
-    CART_RESET
+    
 } from '../constants/cartConstants';
 
 const CART_INITIAL_STATE={

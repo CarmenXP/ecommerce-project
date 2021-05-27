@@ -16,9 +16,8 @@ const Header = () => {
     const cart = useSelector((state)=> state.cart);
     const {cartItems}= cart;
 
-    const cartCount = () =>{
-        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
-    };
+    const like = useSelector((state)=>state.like);
+    const{likeItems} = like;
 
     const userSignin = useSelector((state) => state.userSignin);
     const {userInfo} = userSignin;
@@ -54,8 +53,7 @@ const Header = () => {
                              </form>
                          </div>
                          <div className={styles.menu}>  
-                            {}  
-                            
+                           
                             {userInfo ? (
                             <div className={styles.dropdown}>
                                 <Link to="#">{userInfo.name}</Link>
@@ -72,7 +70,12 @@ const Header = () => {
                                 <Link to="/signIn"><AccountCircleIcon
                                 style={{color: "black", fontSize: 35 }}/></Link>
                             )}
-                            <Link to="/myfavorites"><FavoriteIcon style={{fontSize:35}}/></Link>
+                            {likeItems.length > 0 ? (
+                                <Link to="/myfavorites"><FavoriteIcon style={{color:"red",fontSize:35}}/></Link> 
+                            ):(
+                                <Link to="/myfavorites"><FavoriteIcon style={{fontSize:35}}/></Link>
+                            )}
+                            
                             {cartItems.length > 0 ? (
                                 <Link to="/cart"><ShoppingCartIcon
                                 style={{ color: "black", fontSize: 35 }}

@@ -1,7 +1,7 @@
 footer{
     display: flexbox;
     margin: 0px 0px 10px 0px;
-    background-color: white;
+    background-color: rgb(238, 237, 232);
     padding: 12px;
     border-top-style: solid ;
     border-color: #999999;

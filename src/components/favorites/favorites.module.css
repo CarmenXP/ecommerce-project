@@ -1,0 +1,17 @@
+.contenLike{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-image: url('https://ak1.ostkcdn.com/images/products/is/images/direct/d0eb2365c0ca7e7d7a1805e34ede146f903ec47d/Seabrook-Designs-Rainforest-Leaves-Unpasted-Wallpaper.jpg?impolicy=medium');
+}
+.likeproduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin:  25px 25px;
+}
+.likeproduct img{
+    width: 251px;
+    height: 321px;
+}

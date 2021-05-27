@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fragment } from 'react';
+
 import Carousel from './Carousel';
 import Gallery from './Gallery';
 
@@ -25,13 +25,13 @@ const images=[
 ]
 
    return(
-      <Fragment>
+      <div >
          <Carousel
             images={images}
          />
          <Gallery/>
 
-      </Fragment>
+      </div>
       
 
    )

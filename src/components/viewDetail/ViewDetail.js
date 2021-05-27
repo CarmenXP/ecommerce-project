@@ -1,6 +1,4 @@
 import React,{useEffect, useState} from 'react';
-//import ViewDetailPage from './ViewDetailPage';
-
 import CancelIcon from '@material-ui/icons/Cancel';
 import {useSelector, useDispatch} from 'react-redux';
 import {getProductDetails} from '../../redux/actions/productActions';
