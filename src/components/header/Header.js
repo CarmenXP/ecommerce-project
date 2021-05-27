@@ -22,6 +22,7 @@ const Header = () => {
 
     const userSignin = useSelector((state) => state.userSignin);
     const {userInfo} = userSignin;
+    console.log({userInfo})
     const dispatch = useDispatch();
     const signOutHandler = () =>{
         dispatch(signout());
@@ -54,16 +55,35 @@ const Header = () => {
                          </div>
                          <div className={styles.menu}>  
                             {}  
-                            <Link to="/signIn"><AccountCircleIcon
-                                style={{color: "black", fontSize: 35 }}/>
-                                
-                            </Link>
+                            
+                            {userInfo ? (
+                            <div className={styles.dropdown}>
+                                <Link to="#">{userInfo.name}</Link>
+                                <ul className={styles.dropdownContent}>
+                                    <li>
+                                  <Link to="#signout" onClick={signOutHandler}>
+                                    Cerrar sesión
+                                  </Link>
+                                   </li>
+                                </ul>
+                            </div>
+                            
+                                  ) : (
+                                <Link to="/signIn"><AccountCircleIcon
+                                style={{color: "black", fontSize: 35 }}/></Link>
+                            )}
                             <Link to="/myfavorites"><FavoriteIcon style={{fontSize:35}}/></Link>
-
-                            <Link to="/cart"><ShoppingCartIcon
+                            {cartItems.length > 0 ? (
+                                <Link to="/cart"><ShoppingCartIcon
                                 style={{ color: "black", fontSize: 35 }}
-                            /><span className={styles.count}>{cartCount()}</span>
+                            /><span className={styles.count}>{cartItems.length}</span>
                             </Link>
+                            ) : (
+                                <Link to="/cart"><ShoppingCartIcon
+                                style={{ color: "black", fontSize: 35 }}
+                            /></Link> 
+                            )}
+                            
                          </div>
                     </div>
                  <nav>

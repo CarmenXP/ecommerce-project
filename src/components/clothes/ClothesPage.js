@@ -18,7 +18,7 @@ export default function ClothesPage(){
 
   return(
     <div>
-      <h1>Blusas</h1>
+      
       <div className={styles.content}>
         {loading ? (
           <h2>Loading...</h2>

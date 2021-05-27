@@ -1,5 +1,22 @@
-.checkoutButton{
+.contentCart{
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://image.freepik.com/vector-gratis/patrones-flores-hojas-follaje_24908-59146.jpg');
+    
+}
+.contentCart h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0%;
+    color: rgb(14, 54, 26);
+}
+.sentB{
+    display: flex;
+    justify-content: center;
+}
 
+.checkoutButton{
+    align-items: center;
     border: 1.5px solid rgb(0, 0, 0);
     color: black;
     background-color: white;
@@ -10,7 +27,7 @@
     text-decoration: none;
 }
 .checkoutButton:hover {
-    background-color:black;
+    background-color:rgb(14, 54, 26);
     color: white;
     transition-duration: 0.4s;
     cursor: pointer;

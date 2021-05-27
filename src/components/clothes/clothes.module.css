@@ -16,14 +16,20 @@
     color: rgb(66, 15, 6); 
     margin:8px 0px;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 .price{
+    display: flex;
     text-align: lefts;
-    color: rgb(136, 34, 16);
     margin: 5px 0px 10px 12px;
     font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    
 
+}
+.like{
+    margin-left: 20px;
 }
 .medium{
     width: 251px;

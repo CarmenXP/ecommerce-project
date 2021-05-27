@@ -32,7 +32,7 @@ const ViewDetail = ({match, history}) =>{
   }
 
   return(
-    <div >
+    <div className={styles.view}>
       
         
         <CancelIcon 

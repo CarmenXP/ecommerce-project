@@ -34,10 +34,10 @@ export const register = (name, email, password) => async(dispatch)=>{
 export const signin = (email, password) => async(dispatch) => {
     dispatch({type: USER_SIGNIN_REQUEST, payload: {email, password}});
     try{
-        const {data} = await axios.post('https://backendprojectecommerce.herokuapp.com/auth', {email, password});
-        dispatch({type: USER_SIGNIN_SUCCESS, payload: data.data});
-        console.log(data.data)
-        localStorage.setItem('userInfo', JSON.stringify(data.data));
+        const {data} = await axios.post('https://mini-app-backend.herokuapp.com/auth', {email, password});
+        dispatch({type: USER_SIGNIN_SUCCESS, payload: data});
+        console.log(data)
+        localStorage.setItem('userInfo', JSON.stringify(data));
     }catch(error){
         dispatch({
             type: USER_SIGNIN_FAIL,

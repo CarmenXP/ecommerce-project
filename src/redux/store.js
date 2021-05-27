@@ -17,7 +17,7 @@ import{
 const initialState = {
     userSignin:{
         userInfo: localStorage.getItem('userInfo')
-            ? JSON.parse(localStorage.getItem('userInfo'))
+            ? JSON.stringify(localStorage.getItem('userInfo'))
             : null,
     },
     cart:{

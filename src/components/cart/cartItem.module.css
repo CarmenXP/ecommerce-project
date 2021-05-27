@@ -6,25 +6,43 @@
     border-bottom-style: solid ;
     border-color: #d3cece;
     border-width: 1px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 240, 245, 0.9);
 }
 .imgCart{
     height: 160px;
     width: 140px;
+    padding: 10px;
 
 }
 .articleName{
     width: 190px;
-    background-color: hotpink;
+    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
 }
 .selectQ{
-    background-color: aquamarine;
+    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
+
 
 .priceCart{
     width: 190px;
-    background-color: burlywood;
+    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+
 }
 .totalCart{
     width: 190px;
-    background-color: cadetblue;
+    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+
 }

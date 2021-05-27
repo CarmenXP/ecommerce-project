@@ -33,7 +33,7 @@ header a{
     display: flex;
     justify-content: flex-start;
     width: 33.3%;
-    background-color: darksalmon;
+   
 }
 .logo img{
     width: 100%;
@@ -47,7 +47,7 @@ header a{
   justify-content: center;
   width: 33.3%;  
   box-sizing: border-box;
-  background-color: rgb(75, 71, 71);
+  
  
   
 }
@@ -93,9 +93,40 @@ nav a{
     color:rgb(146, 142, 137);
     
 }
+.dropdown {
+    padding: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 10pxs;
+    background-color: darkgreen;
+    align-items: flex-end;
+  }
+  .dropdown a{
+      
+      text-decoration: none;
+      padding: 0%;
+  }
+  .dropdownContent {
+ 
+    align-items: center;
+    right: 0;
+    font-size: 10px;
+    color: rgb(245, 245, 245);
+    z-index: 1;
+    background-color: #729cc7;
+    margin: 0;
+    border-radius: 0.5rem;
+    display: none;
+  }
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }
 
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 960px) {
     .logo{
       width: 100%;
       justify-content: center;
